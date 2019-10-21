@@ -32,12 +32,9 @@ int EndOfdata;
 
 void setup() {
  Serial.begin(9600); 
+ initDisplay();
  pinMode(pin_BL, OUTPUT); 
- lcd.begin(16, 2);
- lcd.setCursor(0,0);
- lcd.print("  Smart Rabbit ");
- lcd.setCursor(0,1);
- lcd.print("Press Key:");
+ digitalWrite(pin_BL, HIGH); // sets the digital pin BL on
 }
 void loop() {
    if(Serial.available()) serialEvent();
@@ -80,8 +77,11 @@ void loop() {
 
 void initDisplay()
 {
-  lcd.begin(16, 2);
-  lcd.print("Ready to connect");
+ lcd.begin(16, 2);
+ lcd.setCursor(0,0);
+ lcd.print("  Smart Rabbit ");
+ lcd.setCursor(0,1);
+ lcd.print("Serial Communication");
 }
 
 
