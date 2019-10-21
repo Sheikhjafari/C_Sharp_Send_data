@@ -1,8 +1,8 @@
 /*
-Arduino 2x16 LCD - Detect Buttons
-modified on 18 Feb 2019
-by Saeed Hosseini @ Electropeak
-https://electropeak.com/learn/
+Arduino LCD Keypad Shield 
+modified on 21 Oct 2019
+by Alireza Sheikhjafari @ Rabbit Channel
+https://www.aparat.com/v/35zIX
 */
 #include <LiquidCrystal.h>
 //LCD pin to Arduino
@@ -20,11 +20,6 @@ String inputString = "";         // a string to hold incoming data
 boolean stringComplete = false;  // whether the string is complete
 String commandString = "";
 
-boolean isConnected = false;
-void Read_Keys();
-void getCommand();
-String getTextToPrint();
-void printText(String text);
 
 int EndOfCommend;
 int EndOfdata;
