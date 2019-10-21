@@ -32,6 +32,7 @@ int EndOfdata;
 
 void setup() {
  Serial.begin(9600); 
+ pinMode(pin_BL, OUTPUT); 
  lcd.begin(16, 2);
  lcd.setCursor(0,0);
  lcd.print("  Smart Rabbit ");
@@ -45,23 +46,24 @@ void loop() {
       stringComplete = false;
       getCommand();
       
-      if(commandString.equals("START"))
+      if(commandString.equals("Back_Light"))
       {
-        lcd.clear();
-      }
-      if(commandString.equals("STOP"))
-      {
-        lcd.clear();
-        lcd.print("Ready to connect");    
-      }
+        String text = getData();
+        if(text.equals("ON")){
+          digitalWrite(pin_BL, HIGH); // sets the digital pin BL on
+        }else if(text.equals("OFF"))
+        {
+           digitalWrite(pin_BL, LOW);  // sets the digital pin BL off          
+        }
+      }      
       else if(commandString.equals("LINE1"))
       {
-        String text = getTextToPrint();
+        String text = getData();
         printText(text,1);
       }
        else if(commandString.equals("LINE2"))
       {
-        String text = getTextToPrint();
+        String text = getData();
         printText(text,2);
       }
       else if(commandString.equals("CLEAR"))
@@ -97,7 +99,7 @@ void getCommand()
 
 
 
-String getTextToPrint()
+String getData()
 {
   String value = inputString.substring(EndOfCommend+1,inputString.length()-2);
   Serial.println(value);

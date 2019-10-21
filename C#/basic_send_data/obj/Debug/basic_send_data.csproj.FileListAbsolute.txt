@@ -15,3 +15,12 @@ E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Se
 E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\basic_send_data\obj\Debug\basic_send_data.Form1.resources
 E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\basic_send_data\obj\Debug\basic_send_data.Properties.Resources.resources
 E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\basic_send_data\obj\Debug\basic_send_data.csproj.GenerateResource.Cache
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\bin\Debug\basic_send_data.exe.config
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.exe
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.pdb
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\bin\Debug\basic_send_data.exe
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\bin\Debug\basic_send_data.pdb
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.csprojResolveAssemblyReference.cache
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.Form1.resources
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.Properties.Resources.resources
+E:\NEW_PATH\10_learning\CODE\401-comunication\401_C#_serial_send_data\C_Sharp_Send_data\C#\basic_send_data\obj\Debug\basic_send_data.csproj.GenerateResource.Cache

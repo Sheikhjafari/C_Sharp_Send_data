@@ -37,8 +37,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_write = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_on = new System.Windows.Forms.Button();
+            this.btn_off = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -49,7 +53,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(352, 58);
+            this.groupBox2.Size = new System.Drawing.Size(195, 58);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Serial Connection";
@@ -57,7 +61,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(196, 25);
+            this.comboBox1.Location = new System.Drawing.Point(111, 22);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(71, 21);
@@ -65,7 +69,7 @@
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(83, 25);
+            this.btn_connect.Location = new System.Drawing.Point(17, 17);
             this.btn_connect.Margin = new System.Windows.Forms.Padding(2);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(90, 28);
@@ -91,7 +95,7 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(177, 88);
+            this.btn_clear.Location = new System.Drawing.Point(130, 88);
             this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(90, 29);
@@ -128,7 +132,7 @@
             // 
             // btn_write
             // 
-            this.btn_write.Location = new System.Drawing.Point(83, 88);
+            this.btn_write.Location = new System.Drawing.Point(36, 88);
             this.btn_write.Margin = new System.Windows.Forms.Padding(2);
             this.btn_write.Name = "btn_write";
             this.btn_write.Size = new System.Drawing.Size(90, 29);
@@ -137,11 +141,47 @@
             this.btn_write.UseVisualStyleBackColor = true;
             this.btn_write.Click += new System.EventHandler(this.btn_write_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_off);
+            this.groupBox1.Controls.Add(this.btn_on);
+            this.groupBox1.Location = new System.Drawing.Point(226, 168);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(153, 58);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Back Light";
+            // 
+            // btn_on
+            // 
+            this.btn_on.Location = new System.Drawing.Point(23, 19);
+            this.btn_on.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_on.Name = "btn_on";
+            this.btn_on.Size = new System.Drawing.Size(45, 29);
+            this.btn_on.TabIndex = 8;
+            this.btn_on.Text = "ON";
+            this.btn_on.UseVisualStyleBackColor = true;
+            this.btn_on.Click += new System.EventHandler(this.btn_on_Click);
+            // 
+            // btn_off
+            // 
+            this.btn_off.Location = new System.Drawing.Point(87, 19);
+            this.btn_off.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_off.Name = "btn_off";
+            this.btn_off.Size = new System.Drawing.Size(43, 29);
+            this.btn_off.TabIndex = 9;
+            this.btn_off.Text = "OFF";
+            this.btn_off.UseVisualStyleBackColor = true;
+            this.btn_off.Click += new System.EventHandler(this.btn_off_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 240);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -152,6 +192,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -166,6 +207,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_write;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_off;
+        private System.Windows.Forms.Button btn_on;
     }
 }
 

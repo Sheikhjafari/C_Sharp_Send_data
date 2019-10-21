@@ -114,5 +114,15 @@ namespace basic_send_data
                 port.Write("(LINE2," + textBox2.Text + ")\n");
             }
         }
+
+        private void btn_on_Click(object sender, EventArgs e)
+        {
+            port.Write("(Back_Light,ON)\n");
+        }
+
+        private void btn_off_Click(object sender, EventArgs e)
+        {
+            port.Write("(Back_Light,OFF)\n");
+        }
     }//End of Class
 }//End of name space
