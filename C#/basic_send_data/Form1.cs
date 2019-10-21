@@ -21,6 +21,7 @@ namespace basic_send_data
         public Form1()
         {
             InitializeComponent();
+            disableControls();
             getAvailableComPorts();
             foreach (string port in ports)
             {
@@ -79,7 +80,9 @@ namespace basic_send_data
 
         private void enableControls()
         {
-           
+            btn_clear.Enabled = true;
+            btn_off.Enabled = true;
+            btn_on.Enabled = true;
             btn_write.Enabled = true;
             textBox1.Enabled = true;
             groupBox3.Enabled = true;
@@ -88,8 +91,10 @@ namespace basic_send_data
 
         private void disableControls()
         {
-          
 
+            btn_clear.Enabled = false;
+            btn_off.Enabled = false;
+            btn_on.Enabled = false;
             btn_write.Enabled = false;
             textBox1.Enabled = false;
            
@@ -117,12 +122,18 @@ namespace basic_send_data
 
         private void btn_on_Click(object sender, EventArgs e)
         {
-            port.Write("(Back_Light,ON)\n");
+            if (isConnected)
+            {
+                port.Write("(Back_Light,ON)\n");
+            }
         }
 
         private void btn_off_Click(object sender, EventArgs e)
         {
-            port.Write("(Back_Light,OFF)\n");
+            if (isConnected)
+            {
+                port.Write("(Back_Light,OFF)\n");
+            }
         }
     }//End of Class
 }//End of name space

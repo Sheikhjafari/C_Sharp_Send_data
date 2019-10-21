@@ -81,7 +81,7 @@ void initDisplay()
  lcd.setCursor(0,0);
  lcd.print("  Smart Rabbit ");
  lcd.setCursor(0,1);
- lcd.print("Serial Communication");
+ lcd.print("  Serial Port  ");
 }
 
 

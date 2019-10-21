@@ -95,7 +95,7 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(130, 88);
+            this.btn_clear.Location = new System.Drawing.Point(169, 95);
             this.btn_clear.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(90, 29);
@@ -132,7 +132,7 @@
             // 
             // btn_write
             // 
-            this.btn_write.Location = new System.Drawing.Point(36, 88);
+            this.btn_write.Location = new System.Drawing.Point(75, 95);
             this.btn_write.Margin = new System.Windows.Forms.Padding(2);
             this.btn_write.Name = "btn_write";
             this.btn_write.Size = new System.Drawing.Size(90, 29);
